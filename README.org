@@ -1,0 +1,11 @@
+* Install
+You can use my configuration by two steps:
+  1. git clone --depth=1 https://github.com/llNoahll/vim ~/vim
+  
+  2. mv ~/vim/.vimrc ~ (for 32-bit)
+  
+  or mv ~/vim/_vimrc ~ (for 16-bit)
+
+And you can use spac-vim-dark theme.
+
+Happy Hacking!  <(~︶~)> 
