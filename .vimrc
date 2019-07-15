@@ -15,6 +15,12 @@ inoremap <C-p> <Up>
 inoremap <C-n> <Down>
 inoremap <C-d> <DELETE>
 
+" set the menu & the message to English
+set langmenu=en_US
+let $LANG= 'en_US'
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+
 " set basic configs.
 colorscheme space-vim-dark
 set relativenumber
