@@ -23,6 +23,7 @@ source $VIMRUNTIME/menu.vim
 
 " set basic configs.
 colorscheme space-vim-dark
+set number
 set relativenumber
 set guifont=Ubuntu\ Mono:h18
 syntax enable
