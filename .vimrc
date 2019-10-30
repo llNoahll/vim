@@ -57,3 +57,6 @@ set matchtime=5
 
 " set search.
 set incsearch
+
+" set clipboard
+set clipboard=unnamed,unnamedplus
