@@ -1,3 +1,47 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+Plugin 'VundleVim/Vundle.vim'
+
+
+Plugin 'wlangstroth/vim-racket'
+
+
+Plugin 'junegunn/rainbow_parentheses.vim'
+
+" Activation based on file type
+augroup rainbow_lisp
+  autocmd!
+  autocmd FileType lisp,scheme,racket,clojure RainbowParentheses
+augroup ENDlet g:rainbow#max_level = 16
+
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}'], ['（', '）'], ['【', '】']]
+" List of colors that you do not want. ANSI code or #RRGGBB
+let g:rainbow#blacklist = [233, 234]
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
 " change hjkl to ijkl.
 nnoremap h i
 nnoremap i k
@@ -17,7 +61,7 @@ inoremap <C-d> <DELETE>
 
 " set the menu & the message to English
 set langmenu=en_US
-let $LANG= 'en_US'
+let $LANG='en_US'
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
