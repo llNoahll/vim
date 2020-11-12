@@ -8,12 +8,14 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 Plugin 'VundleVim/Vundle.vim'
-
-
 Plugin 'wlangstroth/vim-racket'
-
-
 Plugin 'junegunn/rainbow_parentheses.vim'
+
+
+"powerline"
+let g:powerline_pycmd="py3"
+:set laststatus=2
+
 
 " Activation based on file type
 augroup rainbow_lisp
