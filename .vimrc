@@ -71,7 +71,7 @@ source $VIMRUNTIME/menu.vim
 colorscheme space-vim-dark
 set number
 set relativenumber
-set guifont=Ubuntu\ Mono:h18
+set guifont=Hack:h18
 syntax enable
 syntax on
 set guioptions-=T  "remove toolbar
